@@ -1,7 +1,6 @@
 class MatriculasController < ApplicationController
   before_action :set_matricula, only: [:show, :update, :destroy]
-  #before_action :set_aluno
-  #before_action :set_instituicao_de_ensino
+  
   # GET /matriculas
   def index
     @matriculas = Matricula.all

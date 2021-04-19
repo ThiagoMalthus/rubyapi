@@ -27,7 +27,6 @@ class Matricula < ApplicationRecord
       except: [:created_at, :updated_at],
       methods: [ :aluno_nome, :instituicao_de_ensino_nome],
       include: [faturas: {except: [:created_at, :updated_at]}]
-      #include: [:aluno, :instituicao_de_ensino]
     )
   end
 end
